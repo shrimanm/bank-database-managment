@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-image: url(images/b1.jpg);
+    background-position: 100% 100%;
+    transition: all .5s;
+    background-size:100%;
+    text-transform: capitalize;
+}
+.loginbox{
+    width:320px;
+    height:400px;
+    background:rgba(0, 0, 0, 0.863);
+    color:#fff;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:10px;
+    border-radius: 30px;
+}
+h1{
+    background:linear-gradient(180deg,orange 0%,white 100%) ;
+color:black;
+text-align: center;
+padding:5px;
+border-radius: 10px;
+
+}
+h2{
+    text-align:center;
+    margin-bottom: 50px;
+    font-size: 31px;
+}
+ul{
+    margin:30px 30px 30px 30px;
+    list-style: none;
+    justify-content: center;
+}
+li{
+margin:40px auto;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: 24px;
+    background:linear-gradient(45deg,rgb(46, 207, 228) 0%,rgb(36, 74, 77) 100%) ;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+a:hover{
+    color:black;
+    font-weight: bold;
+    background:linear-gradient(45deg,rgb(36, 74, 77) 0%,rgb(46, 207, 228) 100%) ;
+
+}

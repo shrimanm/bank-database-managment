@@ -1,0 +1,1 @@
+<?php echo '<img src="data:image;base64,' . base64_encode($row['photo']) . '" class="rounded mx-auto d-block" alt="photo" style="width: 150px; height: 150px; "> ' ?>

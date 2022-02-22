@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(45deg,lightblue 0%,lightgrey 100%);
+    text-transform: capitalize;
+    }
+    nav{
+    background-color: aqua;
+    margin:-15px -5px auto -10px;
+    padding:10px;
+    text-align:center;
+    font-size: 10px;
+    }
+    nav ul{
+    }
+    nav ul li{
+        text-align: center;
+        display: inline;
+        font-size: 18px;
+        padding:10px;
+        background: rgb(158, 157, 157);
+        margin:5px;
+        border-radius: 7px;
+        color:black;
+    }
+    nav ul li:hover{
+        background: rgb(224, 222, 222);
+    }
+    nav ul a{
+    text-decoration: none;
+    color:black;
+    }
+    nav ul i{
+        font-size: 50px;
+        margin-right: 180px;
+    }
+    h1{
+        font-size:50px;
+    }
+    nav ul li.home{
+        background: rgb(224, 222, 222);
+    
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0; 
+    }
+    section{
+        text-align: center;
+    }
+    form{
+        padding:10px;
+        border: 2px solid grey;
+        position: relative;
+        margin:10px;
+        border-radius:20px;
+        text-align:left;
+        justify-content: space-between;
+    }
+    input{
+        padding: 6px;  
+        border-radius:8px ;      
+    }
+    form div{
+        display: flex;
+        justify-content: space-around;
+        padding: 4px;
+    }
+   input[type="submit"]{
+       padding:6px 15px;
+       background:linear-gradient(45deg,white 0%,rgb(65, 182, 236) 100%);
+       font-weight: bold;
+       font-size: 16px;
+   }
+   input[type="submit"]:hover{
+    background:linear-gradient(45deg,rgb(65, 182, 236) 0%,white 100%);
+
+   }
+ 

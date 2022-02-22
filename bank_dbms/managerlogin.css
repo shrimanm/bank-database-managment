@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(images/b1.jpg);
+  background-position: 100% 100%;
+  transition: all 0.3s;
+  background-size: 100%;
+}
+.carousel img {
+  max-height: 300px;
+  margin-top: 40px;
+}
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.863);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+h1 {
+  margin-bottom: 13px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

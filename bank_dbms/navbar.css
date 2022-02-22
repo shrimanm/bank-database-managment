@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(45deg, lightblue 0%, lightgrey 100%);
+}
+nav {
+  background-color: aqua;
+  margin: -15px -5px auto -10px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline;
+  font-size: 18px;
+  padding: 10px;
+  background: rgb(158, 157, 157);
+  margin: 5px;
+  border-radius: 7px;
+  color: black;
+}
+nav ul li form input {
+  border: none;
+}
+nav ul li:hover {
+  background: rgb(224, 222, 222);
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul i {
+  font-size: 50px;
+}
+h1 {
+  font-size: 50px;
+}
+nav ul li.home {
+  background: rgb(224, 222, 222);
+}

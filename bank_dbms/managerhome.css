@@ -1,0 +1,50 @@
+.carousel-inner {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(45deg, lightblue 0%, lightgrey 100%);
+}
+nav {
+  background-color: aqua;
+  margin: -15px -5px auto -10px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline;
+  font-size: 18px;
+  padding: 10px;
+  background: rgb(158, 157, 157);
+  border-radius: 7px;
+  color: black;
+  margin-top: 10px;
+}
+nav ul li:hover {
+  background: rgb(224, 222, 222);
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul i {
+  font-size: 50px;
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+}
+nav ul li.home {
+  background: rgb(224, 222, 222);
+}
+.carousel img {
+  min-height: 500px;
+  max-height: 600px;
+  margin-top: 40px;
+}
+::selection {
+  background: grey;
+}

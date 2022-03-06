@@ -61,92 +61,96 @@ if (isset($_POST['submit'])) {
     <?php
     if ($valid == true) {
     ?>
-
-        <table class="table p-0">
-            <thead>
-                <tr>
-                    <th class="table-success h4 text-center p-3" scope="col">Adhar Number</th>
-                    <th class="table-success h4 text-center p-3" scope="col">Pan Number</th>
-                    <th class="table-success h4 text-center p-3" scope="col">Account Balance</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['adharid']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['panid']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['balance'];
-                                                                ?></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table p-0">
-            <thead>
-                <tr>
-                    <th class="table-success h4 text-center p-3" scope="col">account no.</th>
-                    <th class="table-success h4 text-center p-3" scope="col">First name</th>
-                    <th class="table-success h4 text-center p-3" scope="col">middle name</th>
-                    <th class="table-success h4 text-center p-3" scope="col">last name</th>
-                    <th class="table-success h4 text-center p-3" scope="col">date of birth</th>
-                    <th class="table-success h4 text-center p-3" scope="col">age</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['accno']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['fname']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['mname']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['lname']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['dob']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['age']; ?></td>
-                </tr>
-
+        <div class="detail">
+            <table class="table p-0">
                 <thead>
                     <tr>
-                        <th class="table-success h4 text-center p-3" scope="col">gender</th>
-                        <th class="table-success h4 text-center p-3" scope="col">phone no.</th>
-                        <th class="table-success h4 text-center p-3" scope="col">email</th>
-                        <th class="table-success h4 text-center p-3" scope="col">martial</th>
-                        <th class="table-success h4 text-center p-3" scope="col">father name</th>
-                        <th class="table-success h4 text-center p-3" scope="col">mother name</th>
+                        <th class="table-success h4 text-center p-3" scope="col">Photo</th>
+                        <th class="table-success h4 text-center p-3" scope="col">Adhar Number</th>
+                        <th class="table-success h4 text-center p-3" scope="col">Pan Number</th>
+                        <th class="table-success h4 text-center p-3" scope="col">Account Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <?php echo '<img src="data:image;base64,' . base64_encode($row['photo']) . '" class="rounded mx-auto d-block" alt="photo" style="width: 150px; height: 150px; "> ' ?>
+                        </td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['adharid']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['panid']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['balance'];
+                                                                    ?></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table p-0">
+                <thead>
+                    <tr>
+                        <th class="table-success h4 text-center p-3" scope="col">account no.</th>
+                        <th class="table-success h4 text-center p-3" scope="col">First name</th>
+                        <th class="table-success h4 text-center p-3" scope="col">middle name</th>
+                        <th class="table-success h4 text-center p-3" scope="col">last name</th>
+                        <th class="table-success h4 text-center p-3" scope="col">date of birth</th>
+                        <th class="table-success h4 text-center p-3" scope="col">age</th>
 
                     </tr>
                 </thead>
-            <tbody>
-                <tr>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['gender']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['phoneno']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['email']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['martial']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['fathername']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['mothername']; ?></td>
-                </tr>
-
-
-                <thead>
+                <tbody>
                     <tr>
-                        <th class="table-success h4 text-center p-3" scope="col">address</th>
-                        <th class="table-success h4 text-center p-3" scope="col">city</th>
-                        <th class="table-success h4 text-center p-3" scope="col">district</th>
-                        <th class="table-success h4 text-center p-3" scope="col">state</th>
-                        <th class="table-success h4 text-center p-3" scope="col">pincode</th>
-                        <th class="table-success h4 text-center p-3" scope="col">nationality</th>
-
+                        <td class="table-info h5 text-center p-3"><?php echo $row['accno']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['fname']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['mname']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['lname']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['dob']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['age']; ?></td>
                     </tr>
-                </thead>
-            <tbody>
-                <tr>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['address']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['city']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['district']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['state']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['pincode']; ?></td>
-                    <td class="table-info h5 text-center p-3"><?php echo $row['nationality']; ?></td>
-                </tr>
-            </tbody>
-        </table>
 
+                    <thead>
+                        <tr>
+                            <th class="table-success h4 text-center p-3" scope="col">gender</th>
+                            <th class="table-success h4 text-center p-3" scope="col">phone no.</th>
+                            <th class="table-success h4 text-center p-3" scope="col">email</th>
+                            <th class="table-success h4 text-center p-3" scope="col">martial</th>
+                            <th class="table-success h4 text-center p-3" scope="col">father name</th>
+                            <th class="table-success h4 text-center p-3" scope="col">mother name</th>
+
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['gender']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['phoneno']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['email']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['martial']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['fathername']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['mothername']; ?></td>
+                    </tr>
+
+
+                    <thead>
+                        <tr>
+                            <th class="table-success h4 text-center p-3" scope="col">address</th>
+                            <th class="table-success h4 text-center p-3" scope="col">city</th>
+                            <th class="table-success h4 text-center p-3" scope="col">district</th>
+                            <th class="table-success h4 text-center p-3" scope="col">state</th>
+                            <th class="table-success h4 text-center p-3" scope="col">pincode</th>
+                            <th class="table-success h4 text-center p-3" scope="col">nationality</th>
+
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['address']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['city']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['district']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['state']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['pincode']; ?></td>
+                        <td class="table-info h5 text-center p-3"><?php echo $row['nationality']; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     <?php
     }
     ?>

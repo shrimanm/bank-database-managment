@@ -67,10 +67,11 @@ if (isset($_POST['submit'])) {
   <?php
   if ($valid == true) {
   ?>
-    <div class="maintable">
+    <div class="detail">
       <table class="table p-0">
         <thead>
           <tr>
+            <th class="table-success h4 text-center p-3" scope="col">Photo</th>
             <th class="table-success h4 text-center p-3" scope="col">Adhar Number</th>
             <th class="table-success h4 text-center p-3" scope="col">Pan Number</th>
             <th class="table-success h4 text-center p-3" scope="col">Account Balance</th>
@@ -78,9 +79,13 @@ if (isset($_POST['submit'])) {
         </thead>
         <tbody>
           <tr>
+            <td>
+              <?php echo '<img src="data:image;base64,' . base64_encode($row['photo']) . '" class="rounded mx-auto d-block" alt="photo" style="width: 150px; height: 150px; "> ' ?>
+            </td>
             <td class="table-info h5 text-center p-3"><?php echo $row['adharid']; ?></td>
             <td class="table-info h5 text-center p-3"><?php echo $row['panid']; ?></td>
-            <td class="table-info h5 text-center p-3"><?php echo $row['balance']; ?></td>
+            <td class="table-info h5 text-center p-3"><?php echo $row['balance'];
+                                                      ?></td>
           </tr>
         </tbody>
       </table>

@@ -169,7 +169,7 @@ if (isset($_POST['edited'])) {
                 <tbody>
                     <tr>
                         <td>
-                            <?php echo '<img src="data:image;base64,' . base64_encode($row['photo']) . '" class="rounded mx-auto d-block" alt="photo" style="width: 150px; height: 150px; "> ' ?>
+                            <?php echo '<img src="data:image/jpeg;base64,' . base64_encode($row['photo']) . '" class="rounded mx-auto d-block" alt="photo" style="width: 150px; height: 150px; "> ' ?>
                         </td>
                         <td class="table-info h5 text-center p-3"><?php echo $row['adharid']; ?></td>
                         <td class="table-info h5 text-center p-3"><?php echo $row['panid']; ?></td>

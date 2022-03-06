@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($row = mysqli_fetch_array($result)) {
         $sql1 = "DELETE FROM bank.caccount WHERE accno = $accno";
+        $sql2 = "DELETE FROM bank.user WHERE accno = $accno";
         $result1 = mysqli_query($con, $sql1);
+        $result2 = mysqli_query($con, $sql2);
         $deleted = true;
     } else {
         echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>

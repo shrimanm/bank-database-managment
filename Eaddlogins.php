@@ -93,7 +93,7 @@ if (isset($_POST['username'])) {
             <li class="h6"><a href="EcustomerD.php">customer details</a></li>
             <li class="home h6"><a href="Eaddlogins.php">Addlogins</a></li>
             <li class="h6"><a href="Etransactions.php">Transactions</a></li>
-            <li class="h6"><a href="index.php">logout</a></li>
+            <li class="h6"><a href="index.html">logout</a></li>
         </ul>
     </nav>
     <?php

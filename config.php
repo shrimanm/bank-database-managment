@@ -1,4 +1,3 @@
-
 <?php
 //set connection variables
 $server = "localhost";

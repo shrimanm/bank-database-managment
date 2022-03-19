@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
             <li class="h6"><a href="EremoveC.php">remove Caccount</a></li>
             <li class="h6"><a href="Eaddlogins.php">Addlogins</a></li>
             <li class="h6"><a href="Etransactions.php">Transactions</a></li>
-            <li class="h6"><a href="index.html">logout</a></li>
+            <li class="h6"><a href="index.php">logout</a></li>
         </ul>
     </nav>
 

@@ -49,7 +49,7 @@ $con->close();
             <input type="password" name="password" placeholder="Enter password" required>
             <input type="submit" name="submit" value="Login" id="submit" style="padding: 10px; font-weight:bold;background: linear-gradient(45deg,rgb(233, 233, 11)0%,rgb(218, 114, 17) 100%);   border-radius: 20px; cursor:pointer; ">
 
-            <a href="index.html"><i class="fas fa-arrow-alt-circle-left"></i> back to login</a>
+            <a href="index.php"><i class="fas fa-arrow-alt-circle-left"></i> back to login</a>
 
         </form>
     </div>

@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
         <ul>
             <i class="fas fa-university"></i><br><br>
             <li class="home h6"><a href="customerhome.php">Home</a></li>
-            <li class="h6"><a href="index.html">logout</a></li>
+            <li class="h6"><a href="index.php">logout</a></li>
         </ul>
     </nav>
 

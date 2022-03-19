@@ -112,7 +112,7 @@ if (isset($_POST['username'])) {
             <li class="h6"><a href="customerD.php">customer details</a></li>
             <li class="home h6"><a href="addlogins.php">Addlogins</a></li>
             <li class="h6"><a href="transactions.php">Transaction</a></li>
-            <li class="h6"><a href="index.html">logout</a></li>
+            <li class="h6"><a href="index.php">logout</a></li>
         </ul>
     </nav>
     <?php
